@@ -1,8 +1,7 @@
 doctype html
 html(lang='en')
   head
-    title= pageTitle
-    script(src='src/app.ts')
+    title= Wallpapers
     link(rel='stylesheet' href='./index.stylus')
 
   body
@@ -10,3 +9,5 @@ html(lang='en')
       div.parent#gallery
         each image, i in page1Images
           div(class='thumb' style="background-image: url('/sprites/0.jpg'); background-position: -0px -"  + i * 108 + 'px;')
+
+  script(src='src/app.ts')
