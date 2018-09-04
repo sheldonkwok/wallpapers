@@ -1,0 +1,29 @@
+{
+  "name": "wallpapers",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.24",
+    "@types/lodash": "^4.14.116",
+    "@types/mz": "0.0.32",
+    "@types/node": "^10.9.4",
+    "parcel-bundler": "^1.9.7",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "lodash": "^4.17.10",
+    "mz": "^2.7.0"
+  },
+  "prettier": {
+    "printWidth": 110,
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}
