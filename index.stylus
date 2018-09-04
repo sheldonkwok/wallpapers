@@ -2,6 +2,9 @@
   display: grid
   grid-template-columns: repeat(auto-fill, 192px)
   grid-gap: 10px
+  align-content: space-around
+  justify-content: space-between
+
 
 .thumb
   width: 192px
