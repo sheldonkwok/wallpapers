@@ -2,10 +2,11 @@ doctype html
 html(lang='en')
   head
     title= pageTitle
-    script(src='./src/app.ts')
+    script(src='src/app.ts')
     link(rel='stylesheet' href='./index.stylus')
 
   body
-    div.parent
-      each image, i in page1Images
-        div(class='page1 thumb thumb-' + i style="background-image: url('/sprites/0.jpg'); background-position: -0px -"  + i * 108 + 'px;')
+    setion#main
+      div.parent#gallery
+        each image, i in page1Images
+          div(class='thumb' style="background-image: url('/sprites/0.jpg'); background-position: -0px -"  + i * 108 + 'px;')

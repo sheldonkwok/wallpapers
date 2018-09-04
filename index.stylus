@@ -5,7 +5,6 @@
   align-content: space-around
   justify-content: space-between
 
-
 .thumb
   width: 192px
   height: 108px
