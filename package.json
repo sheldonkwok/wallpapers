@@ -4,24 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "parcel index.pug"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/bluebird": "^3.5.24",
-    "@types/lodash": "^4.14.116",
+    "@types/bluebird": "~3.5.25",
+    "@types/lodash": "~4.14.116",
     "@types/mz": "0.0.32",
-    "@types/node": "^10.9.4",
-    "parcel-bundler": "^1.11.0",
-    "pug": "^2.0.3",
-    "stylus": "^0.54.5",
-    "typescript": "^3.0.3"
+    "@types/node": "~10.9.4",
+    "parcel-bundler": "~1.11.0",
+    "pug": "~2.0.3",
+    "stylus": "~0.54.5",
+    "typescript": "~3.0.3"
   },
   "dependencies": {
-    "bluebird": "^3.5.2",
-    "lodash": "^4.17.10",
-    "mz": "^2.7.0"
+    "bluebird": "~3.5.2",
+    "lodash": "~4.17.10",
+    "mz": "~2.7.0"
   },
   "prettier": {
     "printWidth": 110,
