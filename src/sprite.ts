@@ -1,12 +1,13 @@
 import * as fs from 'mz/fs';
 import * as cp from 'mz/child_process';
-import * as lodash from 'lodash';
-import * as bluebird from 'bluebird';
+import lodash from 'lodash';
+import bluebird from 'bluebird';
 
 const THUMBNAIL_DIR = `${__dirname}/../dist/thumbnails`;
 const SPRITE_SIZE = 200;
 const FILE_REGEX = /\.(jpg|jpeg|png)$/;
-const MANIFEST_FILE = 'dist/sprites/manifest.json';
+const SPRITE_DIR = 'dist/sprites';
+const MANIFEST_FILE = `${SPRITE_DIR}/manifest.json`;
 
 async function createSprites(images: string[], index: number): Promise<string> {
   const file = `dist/sprites/${index}.jpg`;
@@ -34,6 +35,7 @@ async function main(): Promise<void> {
     .chunk(SPRITE_SIZE)
     .value();
 
+  await fs.mkdir(SPRITE_DIR);
   await Promise.all([writeSprites(chunkedImages), writeManifest(chunkedImages)]);
 }
 

@@ -26,7 +26,7 @@ function appendNodes() {
 
 window.addEventListener('scroll', _e => {
   const minWindowRange = document.body.clientHeight - 10;
-  const currPosition = document.documentElement.scrollTop + window.innerHeight;
+  const currPosition = document.documentElement!.scrollTop + window.innerHeight;
 
   if (currPosition >= minWindowRange) appendNodes();
 });

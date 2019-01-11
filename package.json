@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "parcel index.pug"
+    "dev": "parcel serve -d dist/web web/index.pug",
+    "pkg": "parcel build -d dist/web web/index.pug"
   },
   "author": "",
   "license": "MIT",
@@ -17,7 +18,7 @@
     "parcel-bundler": "~1.11.0",
     "pug": "~2.0.3",
     "stylus": "~0.54.5",
-    "typescript": "~3.0.3"
+    "typescript": "~3.1.3"
   },
   "dependencies": {
     "bluebird": "~3.5.2",
